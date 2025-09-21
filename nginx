@@ -1,0 +1,13 @@
+server {
+    listen 80;
+    server_name vodka.bet www.vodka.bet;
+    return 301 https://vodka-kaz.ru$request_uri;
+}
+server {
+    listen 443 ssl;
+    server_name vodka.bet www.vodka.bet;
+    ssl_certificate     /etc/letsencrypt/live/vodka.bet/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/vodka.bet/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    return 301 https://vodka-kaz.ru$request_uri;
+}
