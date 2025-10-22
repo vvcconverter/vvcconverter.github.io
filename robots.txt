@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://casino-app.store/sitemap.xml
+Sitemap: https://vvcconverter.github.io/sitemap.xml
+
